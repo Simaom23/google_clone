@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Necessary imports and links for HTML page -->
+    <head>
+        <title>Google: Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="static/style.css" type="text/css">
+        <link rel="icon" href="static/images/img.png" type="img/png">
+    </head>
+    <body>
+
+        <!-- Header with links to the other HTML pages -->
+        <header class="head-div">
+            <a href="images.html">Images</a>
+            <a href="advanced.html">Advanced Search</a>
+        </header>
+
+        <!-- Centered Google logo -->
+        <div class="logo-div">
+            <img id="logo" alt="Google" src="static/images/logo.png">
+        </div>
+
+        <!-- Google Search bar with search form -->
+        <div class="search-div">
+            <form action="https://google.com/search">
+                <div class="search-bar">
+                    <div class="search-icon-div">
+                        <span id="search-icon" class="material-symbols-outlined">
+                            search
+                        </span>
+                    </div>
+                    <input id="search" type="text" name="q"> <!-- Input field -->
+                </div>
+                <div class="search-button-div">
+                    <input class="search-button" type="submit" value="Google Search"> <!-- Search button -->
+                    <input class="search-button" type="submit" name="btnI" value="I'm Feeling Lucky"> <!-- Search button to the first page it appears -->
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

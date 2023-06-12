@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Necessary imports and links for HTML page -->
+    <head>
+        <title>Google: Advanced Search</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="static/styleAdvanced.css" type="text/css">
+        <link rel="icon" href="static/images/img.png" type="img/png">
+
+        <!-- Media query to scale down advanced search page -->
+        <style>
+            @media (max-width: 1055px) {
+                .third-advanced-search-field {
+                  display: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="advanced-head-div">
+            <!-- Logo -->
+            <div class="advanced-head-div-left">
+                <img id="logo" alt="Google" src="static/images/logo.png">
+            </div>
+
+            <!-- Header with link to Google Search page -->
+            <div class="advanced-head-div-right">
+                <a href="index.html">Google Search</a>
+            </div>
+        </header>
+
+        <!-- Advanced search label -->
+        <div class="advanced-search-label">
+            <label>Advanced Search</label>
+        </div>
+        <div style="margin: 25px 0px; border-bottom: 1px solid #3c4043;"></div> <!-- Horizontal line div styling -->
+        <div class="advanced-search-div">
+            <div class="advanced-search-item">
+                <div class="first-advanced-search-field">
+                    <div class="advanced-search-field-left">
+                        <lable style="color: #e8eaed; font-family: arial, sans-serif; font-size: 16px; font-weight: 500;">Find pages with:</lable>
+                    </div>
+                </div>
+                <div class="second-advanced-search-field">
+                    <div class="advanced-search-field-center">
+                        <input hidden>
+                    </div>
+                </div>
+                <div class="third-advanced-search-field">
+                    <div class="advanced-search-field-right">
+                        <lable style="color: #e8eaed; font-family: arial, sans-serif; font-size: 13px; font-weight: 700;">Do this in search box.</lable>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Advanced Search form with various fields -->
+            <form action="https://google.com/search">
+
+                <!-- 'All these words' search field-->
+                    <div class="advanced-search-item">
+                        <div class="first-advanced-search-field">
+                            <div class="advanced-search-field-left">
+                                <label>all these words:</label>
+                            </div>
+                        </div>
+                        <div class="second-advanced-search-field">
+                            <div class="advanced-search-field-center">
+                                <input type="text" name="as_q" value="">
+                            </div>
+                        </div>
+                        <div class="third-advanced-search-field">
+                            <div class="advanced-search-field-right">
+                                Type importante words: <span>tri-color rat terrier</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 'This exact word or phrase' search field -->
+                    <div class="advanced-search-item">
+                        <div class="first-advanced-search-field">
+                            <div class="advanced-search-field-left">
+                                <label>this exact word or phrase:</label>
+                            </div>
+                        </div>
+                        <div class="second-advanced-search-field">
+                            <div class="advanced-search-field-center">
+                                <input type="text" name="as_epq" value="">
+                            </div>
+                        </div>
+                        <div class="third-advanced-search-field">
+                            <div class="advanced-search-field-right">
+                                Put exact words in quotes: <span>"rat terrier"</span>
+                            </div>
+                        </div>
+                    </div>
+
+                      <!-- 'Any of these words' search field -->
+                    <div class="advanced-search-item">
+                        <div class="first-advanced-search-field">
+                            <div class="advanced-search-field-left">
+                                <label>any of these words:</label>
+                            </div>
+                        </div>
+                        <div class="second-advanced-search-field">
+                            <div class="advanced-search-field-center">
+                                <input type="text" name="as_oq" value="">
+                            </div>
+                        </div>
+                        <div class="third-advanced-search-field">
+                            <div class="advanced-search-field-right">
+                                Type OR between all the words you want: <span>miniautre OR standard</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 'None of these words' search field -->
+                    <div class="advanced-search-item">
+                        <div class="first-advanced-search-field">
+                            <div class="advanced-search-field-left">
+                                <label>none of these words:</label>
+                            </div>
+                        </div>
+                        <div class="second-advanced-search-field">
+                            <div class="advanced-search-field-center">
+                                <input type="text" name="as_eq" value="">
+                            </div>
+                        </div>
+                        <div class="third-advanced-search-field">
+                            <div class="advanced-search-field-right">
+                                Put a minus sign before words that you don't want: <span>-rodent, -"Jack Russel"</span>
+                            </div>
+                        </div>
+                    </div>
+
+                 
+                <div class="advanced-search-button-div">
+                    <div class="advanced-search-button-item">
+                        <input type="submit" value="Advanced Search"> <!-- Advanced Search button -->
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
